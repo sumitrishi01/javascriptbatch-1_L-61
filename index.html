@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavascriptBatch-1_61_BULB</title>
+        <style>
+            body{
+                background-color: black;
+                text-align:center;
+                margin: 120px 0;
+            }
+            .btn1{
+                background-color: red;
+                /* border: none; */
+                font-size: 20px;
+                font-family:serif;
+                border-radius: 5px;
+                
+            }
+            .btn2{
+                background-color: green;
+                /* border: none; */
+                font-size: 20px;
+                font-family:serif;
+                border-radius: 5px;
+                
+            }
+        </style>
+        <script>
+            //function defination is one time process
+            function clickMe(state){ //Formal argument/parameters               
+                if(state =='on'){
+                    //true
+                    //object.members
+                    //object.methods
+                    document.querySelector('.body').style.backgroundColor= "yellow";
+                    document.getElementById('myimg').setAttribute("src",'img/bulb2.png');
+                }
+                else{
+                   //false
+                   document.querySelector(".body").style.backgroundColor="black";
+                   document.getElementById('myimg').setAttribute("src",'img/bulb1.png');
+                }                                
+            }
+
+            //function defination is one time process
+            /*let off = () => {
+                document.querySelector(".body").style.backgroundColor="black"
+            }*/
+        </script>
+    </head>
+    <body class="body">
+        <img id="myimg" src="./img/bulb1.png" alt="pic" title="bulb" width="200px">
+        <button class="btn1" onclick="clickMe('on')">On</button>
+        <button class="btn2" onclick="clickMe('off')">Off</button>
+        <script>
+
+        </script>
+    </body>
+</html>
